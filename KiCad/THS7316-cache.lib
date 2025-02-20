@@ -1,0 +1,111 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Screw_Terminal_01x02
+#
+DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Polyfuse_Small
+#
+DEF Device_Polyfuse_Small F 0 0 N Y 1 F N
+F0 "F" -75 0 50 V V C CNN
+F1 "Device_Polyfuse_Small" 75 0 50 V V C CNN
+F2 "" 50 -200 50 H I L CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *polyfuse*
+ *PTC*
+$ENDFPLIST
+DRAW
+S -20 50 20 -50 0 1 0 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 -40 50 -40 30 40 -30 40 -50 N
+X ~ 1 0 100 25 D 50 50 1 1 P
+X ~ 2 0 -100 25 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# dk_Barrel-Power-Connectors_PJ-202A
+#
+DEF dk_Barrel-Power-Connectors_PJ-202A J 0 40 Y Y 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "dk_Barrel-Power-Connectors_PJ-202A" 0 -250 50 H V C CNN
+F2 "digikey-footprints:Barrel_Jack_5.5mmODx2.1mmID_PJ-202A" 200 200 60 H I L CNN
+F3 "https://www.cui.com/product/resource/digikeypdf/pj-202a.pdf" 200 300 60 H I L CNN
+F4 "CP-202A-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "PJ-202A" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Barrel - Power Connectors" 200 700 60 H I L CNN "Family"
+F8 "https://www.cui.com/product/resource/digikeypdf/pj-202a.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/cui-inc/PJ-202A/CP-202A-ND/252007" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN PWR JACK 2X5.5MM KINKED PIN" 200 1000 60 H I L CNN "Description"
+F11 "CUI Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+A -175 0 25 901 -901 1 1 0 N -175 25 -175 -25
+S -25 50 0 -50 1 1 0 N
+P 2 1 1 0 -25 -25 -175 -25 N
+P 2 1 1 0 -25 25 -175 25 N
+P 3 1 1 0 0 -100 -50 -100 -100 -100 N
+P 4 1 1 0 0 -200 -150 -200 -200 -150 -250 -200 N
+P 5 1 1 0 -100 -100 -125 -100 -100 -150 -75 -100 -100 -100 N
+X ~ 1 100 0 100 L 50 50 1 1 P
+X ~ 2 100 -200 100 L 50 50 1 1 P
+X ~ 3 100 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
